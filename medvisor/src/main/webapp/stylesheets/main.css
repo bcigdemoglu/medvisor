@@ -1568,7 +1568,7 @@
 	}
 
 	body {
-		background: #47BBED;
+		background: #AF403E;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1585,8 +1585,8 @@
 /* Type */
 
 	body {
-		background-color: #47BBED;
-		color: #47BBED;
+		background-color: #AF403E;
+		color: #FFFFFF;
 	}
 
 	body, input, select, textarea {
@@ -1638,11 +1638,13 @@
 		}
 
 	a {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
+
+
 		}
 
 	strong, b {
@@ -1763,7 +1765,7 @@
 	}
 
 	a {
-		color: #AF403E;
+		color: #211414;
 	}
 
 	strong, b {

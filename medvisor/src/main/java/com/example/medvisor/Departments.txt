@@ -1,0 +1,26 @@
+Accident and emergency (A&E)
+Anaesthetics
+Cardiology
+Critical care
+Diagnostic imaging
+Ear nose and throat (ENT)
+Gastroenterology
+General surgery
+Gynaecology
+Haematology
+Microbiology
+Neonatal unit
+Nephrology
+Neurology
+Occupational therapy
+Oncology
+Ophthalmology
+Orthopaedics
+Pain management clinics
+Pharmacy
+Physiotherapy
+Radiotherapy
+Renal unit
+Rheumatology
+Sexual health (genitourinary medicine)
+Urology

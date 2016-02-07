@@ -8,9 +8,17 @@
         <servlet-name>sign</servlet-name>
         <servlet-class>com.example.medvisor.SignUserServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>editComplaint</servlet-name>
+        <servlet-class>com.example.medvisor.EditComplaintServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>sign</servlet-name>
         <url-pattern>/sign</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editComplaint</servlet-name>
+        <url-pattern>/editComplaint</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>Welcome.jsp</welcome-file>

@@ -25,6 +25,7 @@ import com.googlecode.objectify.Key;
 import java.lang.String;
 import java.util.Date;
 import java.util.List;
+import java.util.HashMap; 
 
 /**
  * The @Entity tells Objectify about our entity.  We also register it in OfyHelper.java -- very
@@ -46,6 +47,7 @@ public class UserComplaint {
   public String author_email;
   public String author_id;
   public String content;
+  public HashMap<String, Integer> redirectedTo;
   @Index public Date date;
 
   /**
@@ -53,6 +55,7 @@ public class UserComplaint {
    **/
   public UserComplaint() {
     date = new Date();
+    redirectedTo = new HashMap<String, Integer>();
   }
 
   /**

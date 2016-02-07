@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 //[START all]
-package com.example.guestbook;
+package com.example.medvisor;
 
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;

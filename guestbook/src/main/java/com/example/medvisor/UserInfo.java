@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.guestbook;
+package com.example.medvisor;
 
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
@@ -26,6 +26,6 @@ import com.googlecode.objectify.annotation.Id;
  * This is never actually created, but gives a hint to Objectify about our Ancestor key.
  */
 @Entity
-public class Guestbook {
-  @Id public String book;
+public class UserInfo {
+  @Id public String email;
 }

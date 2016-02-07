@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.guestbook;
+package com.example.medvisor;
 
 import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
@@ -29,10 +29,8 @@ import javax.servlet.ServletContextEvent;
  **/
 public class OfyHelper implements ServletContextListener {
   public static void register() {
-    // ObjectifyService.register(Guestbook.class);
     ObjectifyService.register(UserInfo.class);
     ObjectifyService.register(UserComplaint.class);
-    // ObjectifyService.register(Greeting.class);
   }
 
   public void contextInitialized(ServletContextEvent event) {

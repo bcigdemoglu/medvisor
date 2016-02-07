@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.guestbook;
+package com.example.medvisor;
 
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;

@@ -23,6 +23,10 @@
 
 <%
     String guestbookName = request.getParameter("guestbookName");
+    Integer numberOfMessages = new Integer(5);
+    String num = request.getParameter("numberOfMessages");
+    if (num != null)
+        numberOfMessages = Integer.valueOf(num);
     if (guestbookName == null) {
         guestbookName = "default";
     }
@@ -57,7 +61,7 @@
           .type(Greeting.class) // We want only Greetings
           .ancestor(theBook)    // Anyone in this book
           .order("-date")       // Most recent first - date is indexed.
-          .limit(5)             // Only show 5 of them.
+          .limit(numberOfMessages) // Only show 5 of them.
           .list();
 
     if (greetings.isEmpty()) {
@@ -90,16 +94,23 @@
     }
 %>
 
+<a href="/Doctor.jsp">here</a>
+
 <form action="/sign" method="post">
     <div><textarea name="content" rows="3" cols="60"></textarea></div>
     <div><input type="submit" value="Post Greeting"/></div>
     <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
 </form>
 <%-- //[END datastore]--%>
-<form action="/guestbook.jsp" method="get">
+<form action="/guestbook.jsp" method="post">
     <div><input type="text" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/></div>
     <div><input type="submit" value="Switch Guestbook"/></div>
 </form>
+
+<!-- <form action="/guestbook.jsp" method="post">
+    <div><input type="text" name="numberOfMessages" value="${fn:escapeXml(guestbookName)}"/></div>
+    <div><input type="submit" value="Set Number of Messages"/></div>
+</form> -->
 
 </body>
 </html>

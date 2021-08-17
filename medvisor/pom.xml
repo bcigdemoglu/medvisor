@@ -14,7 +14,7 @@
         <appengine.version>1.9.31</appengine.version>
         <gcloud.plugin.version>2.0.9.74.v20150814</gcloud.plugin.version>
 
-        <objectify.version>5.1.5</objectify.version>
+        <objectify.version>5.1.25</objectify.version>
         <guava.version>18.0</guava.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

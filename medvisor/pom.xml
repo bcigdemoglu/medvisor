@@ -15,7 +15,7 @@
         <gcloud.plugin.version>2.0.9.74.v20150814</gcloud.plugin.version>
 
         <objectify.version>6.0</objectify.version>
-        <guava.version>30.0-android</guava.version>
+        <guava.version>30.1.1-jre</guava.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
